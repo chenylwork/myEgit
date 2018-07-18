@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录-ProjectMG 账号</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bg.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="register-logo">
+    <a href="main.html" class="bg-register">ProjectMG</a>
+</div>
+<div class="form-unit">
+    <form action="">
+        <div class="login-input-box">
+             <input type="text" id="login-field" class="login-input" placeholder="邮箱/手机号">
+        </div>
+        <input type="text" id="error-login-userName" class="bg-error-logo error error-message hidden" value="请输入正确登录信息">
+        <div class="login-input-box">
+             <input type="password" id="login-password" class="login-input" placeholder="密码">
+        </div>
+        <input type="text" id="error-login-password" class="bg-error-logo error error-message hidden" value="密码错误">
+        <div class="forgot-password">
+            <a href="">忘记密码？</a>
+        </div>
+        <input type="button" value="登录" id="login-btn" class="btn primary-btn">
+
+        <div class="line" style="margin-top: 25px;"></div>
+
+        <div class="login-links">
+            还没有账号？ <a href="">注册新账号</a>
+        </div>
+        <div class="others-login">
+            <a href="" class="icon"></a>
+        </div>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	$("#login-btn").click(function(){loginBtnFun();});
+});
+</script>
+</html>

@@ -1,0 +1,39 @@
+/*
+* @Author: admin
+* @Date:   2018-07-05 14:56:48
+* @Last Modified by:   admin
+* @Last Modified time: 2018-07-09 13:20:33
+*/
+.bg-logo{
+    background-image: url(../images/logo.svg);
+    background-size: 116px 20px;
+    background-repeat: no-repeat;
+}
+.bg-register{
+    background-image: url(../images/logo.svg);
+    background-size: 202px 30px;
+    background-repeat: no-repeat;
+}
+.bg-index-header{
+    background-image: url(../images/logo.svg); 
+    background-size: 92px 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg-search-logo{
+    background-image: url(../images/search.svg); 
+    background-size: 20px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.bg-error-logo{
+	background: url(../images/error.png);
+	background-size: 20px 20px;
+	background-position: left center;
+    background-repeat: no-repeat;
+}
+.icon{background-repeat: no-repeat;}
+.icon-edit{background-image: url(../images/edit.svg);background-size:20px;}
+.icon-star{background-image: url(../images/star.svg);background-size:15px;}
+.icon-edit:hover{background-image: url(../images/edit-hover.svg);background-size:20px;}
+.icon-star:hover{background-image: url(../images/star-hover.svg);background-size:15px;}

@@ -1,0 +1,110 @@
+/*
+* @Author: admin
+* @Date:   2018-07-12 10:16:47
+* @Last Modified by:   admin
+* @Last Modified time: 2018-07-12 10:18:21
+*/
+*{
+    margin:0px;
+    padding:0px;
+}
+#SelectPicture{
+    position:absolute;
+    border:3px solid #ff6a00;
+    border-radius:8px;
+    color:#ff6a00;
+    text-align:center;
+    font-family:'Microsoft YaHei';
+    cursor:pointer;
+}
+#upfile{
+    display:none;
+}
+#pre,#ccp,#bt{
+    float:left;
+    z-index:1;
+    border:1px solid #ffffff;
+}
+#ccp{
+    border:1px dashed #808080;
+    border-left:1px dashed #808080;
+    border-right:1px dashed #808080;
+}
+#prea,#preb,#prec{
+    position:absolute;
+    background-color:#ff6a00;
+    border-radius:7px;
+}
+#ctna,#ctnb,#ctnc{
+    position:absolute;
+    background-color:#ffffff;
+    overflow:hidden;
+}
+#imga,#imgb,#imgc{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+#Y_OUT,#N_OUT{
+    position:absolute;
+}
+#Y,#N{
+   /* background-color:#ff6a00;*/
+    position:absolute;
+    text-align:center;
+    border:3px solid #ff6a00;
+    border-radius:50%;
+    color:#ff6a00;
+    font-family:Arial;
+    cursor:pointer;
+}
+#ctn{
+    position:absolute;
+    background-color:blueviolet;
+    overflow:hidden;
+}
+#black_cover{
+    position:absolute;
+    background-color:black;
+    opacity:0.6;
+    z-index:3;
+}
+#fixed_img{
+    position:absolute;
+}
+#varied_div{
+    position:absolute;
+    z-index:4;
+    overflow: hidden;
+    cursor:move;
+}
+#BottomRight,#TopRight,#TopLeft,#BottomLeft {
+    background:#D6FB66;
+    display:block;
+    width:6px;
+    height:6px;
+    position:absolute;
+    z-index:5;
+    bottom:0;
+    right:0;
+    cursor:nw-resize;
+}
+#BottomLeft {
+    bottom:0;
+    left:0;
+    cursor:ne-resize;
+}
+#TopRight {
+    top:0;
+    right:0;
+    cursor:ne-resize;
+}
+#TopLeft {
+    top:0;
+    left:0;
+    cursor:nw-resize;
+}
+#varied_div_img{
+    position:absolute;
+    z-index:5;
+}

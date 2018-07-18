@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册-projectMG 账号</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bg.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div class="register-logo">
+    <a href="main.html" class="bg-register">ProjectMG</a>
+</div>
+<div class="form-unit">
+    <form action="" id="field-form" class="show">
+        <div class="login-input-box">
+             <input type="text" id="field" id="form-field" class="login-input" placeholder="你的工作邮箱或手机号">
+        </div>
+        <input type="text" id="error-message" class="bg-error-logo error error-message hidden" value="你的工作邮箱或手机号">
+        <input type="button" value="即刻开始" class="btn primary-btn" id="field-btn">
+
+        <div class="line" style="margin-top: 25px;"></div>
+
+        <div class="login-links">
+            第三方帐号登录 或 <a href="">ProjectMG账号登录</a>
+        </div>
+        <div class="others-login">
+            <a href="" class="icon"></a>
+        </div>
+    </form>
+    <div class="login-header hidden" id="reister-header">
+        <h4>注册新账号</h4>
+    </div>
+    <form action="" id="email-form" class="hidden" >
+        <div class="login-input-box">
+             <input type="text" name="email" id="email" class="login-input" readonly="readonly" placeholder="邮箱">
+        </div>
+        <div class="login-input-box">
+             <input type="text" name="userName" id="userName" class="login-input" placeholder="姓名">
+        </div>
+        <input type="text" id="error-userName" class="bg-error-logo error error-message hidden" value="4-10位字母或数字">
+        <div class="login-input-box">
+             <input type="password" name="password" id="password" class="login-input" placeholder="密码">
+        </div>
+        <input type="text" id="error-password" class="bg-error-logo error error-message hidden" value="6到16位（字母，数字，下划线）">
+        <div class="login-input-box">
+             <input type="password" id="entPassword" class="login-input" placeholder="确认密码">
+        </div>
+        <input type="text" id="error-entPassword" class="bg-error-logo error error-message hidden" value="密码不一致">
+    </form>
+    <div class="submit-box hidden" id="register-btns">
+        <input type="button" value="注册" class="btn primary-btn" id="submit-btn">
+        <div class="login-links">
+            <input type="checkbox">
+            我已阅读并同意<a href="">《服务条款》</a>与<a href="">《隐私条款》</a>
+        </div>
+        <div class="line" style="margin: 25px 0;"></div>
+        <input type="button" value="使用其他账号登录" class="btn default-btn">
+    </div>
+    
+    <div class="login-header hidden" id="login-header">
+        <h4>该用账号已存在，请直接登录</h4>
+    </div>
+    <form action="" id="login-form" class="hidden">
+        <div class="login-input-box">
+             <input type="text" id="login-field" class="login-input" placeholder="邮箱/手机号">
+        </div>
+        <input type="text" id="error-login-userName" class="bg-error-logo error error-message hidden" value="该用户不存在！">
+        <div class="login-input-box">
+             <input type="password" id="login-password" class="login-input" placeholder="密码">
+        </div>
+		<input type="text" id="error-login-password" class="bg-error-logo error error-message hidden" value="密码错误">
+        <div class="forgot-password">
+            <a href="javascript:alert('待完善！！');">忘记密码？</a>
+        </div>
+        <input type="button" value="登录" class="btn primary-btn" id="login-btn">
+        <div class="line" style="margin-top: 25px;"></div>
+
+        <div class="login-links">
+            还没有账号？ <a href="">注册新账号</a>
+        </div>
+        <div class="others-login">
+            <a href="" class="icon"></a>
+        </div>
+    </form>
+</div>
+</body>
+<script>
+$(function(){
+	$("#field").focus(function(){hidden($("#error-message"));});
+	$("#field").keydown(function(event){
+		if(event.keyCode==13) {
+			fieldBtnFun($("#field").val());
+		}
+	});
+	$("#userName").focus(function(){hidden($("#error-userName"))});
+	$("#password").focus(function(){hidden($("#error-password"))});
+	$("#entPassword").focus(function(){hidden($("#error-entPassword"))});
+	$("#field-btn").click(function(){
+		fieldBtnFun($("#field").val());
+	});
+	$("#submit-btn").click(function(){reisterBtnFun();});
+	$("#login-btn").click(function(){loginBtnFun();});
+});
+</script>
+</html>

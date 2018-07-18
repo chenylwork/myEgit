@@ -1,0 +1,57 @@
+/*
+* @Author: admin
+* @Date:   2018-07-10 16:28:09
+* @Last Modified by:   admin
+* @Last Modified time: 2018-07-10 23:43:50
+*/
+/* body{overflow: hidden;} */
+.project_bk{background-color: #d9d9d9;border-bottom: 1px solid #d9d9d9;
+    z-index: 50;transition: right 218ms ease;}
+.home-box{height: 20px;margin: 20px 0;margin-right: 60px;}
+.home-box>li{float: left;width: 60px; border-right: 1px solid #ccc;text-align: center;}
+.home-box>li>a{color:#666;}
+.home-box>li>a:hover{color: #3da8f5;}
+.nav{height: 50px;line-height: 50px; font-size: 18px;z-index: 99;}
+.nav a{color: #383838;}
+.nav a:hover{color: #03a9f4;}
+.nav-header{width: 20%;}
+.nav-header>div{margin-left: 15px;}
+.arrow-right{padding: 0 5px;}
+.nav-body{width: 60%;text-align: center;}
+.nav-tabs{display: inline-block;}
+.nav-tabs>li{margin-right: 20px;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{background: none;color:#03a9f4;border-bottom:3px solid #03a9f4;}
+.nav-tab:hover{border-bottom:3px solid #03a9f4;}
+.nav-footer{width: 20%;}
+
+.task-panel{width: 100%;display: inline-block; padding: 10px;}
+.panel{}
+.tesk-list-panel{width: 100%;height: 600px;}
+.task-list-box{
+}
+.task-list{float: left; width: 288px;height: 600px;margin-right:10px;border-radius: 5px;}
+.task-header{height: 35px; margin: 10px; font-size: 18px;padding: 10px;}
+.task-header .add-btn{margin: 0;margin-right: 10px;}
+.task{background: #fff;margin:10px;margin-top: 0px;padding:20px 10px; border:10px solid #fff;border-radius: 5px;cursor: pointer;box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);}
+.task:hover{border-left-color:#ccc;}
+.address{margin-top: -10px;}
+.task>.task-state{width: 20px; height: 20px; border: 2px solid #666666; border-radius: 4px;}
+.task>.task-state:hover{border-color:#a6a6a6;}
+.task-state-1,.task-state-3:hover{border-color:#666666;}
+.task-state-1:hover,.task-state-3{border-color:#a6a6a6;}
+.task>.task-name{margin-left: 20px;line-height: 20px;}
+.task>.task-remove{font-size: 18px;font-weight: 500;color:#a6a6a6; }
+.task>.task-remove:hover{color:#666666;}
+.task-add-btn{width: 288px; height: 35px; border-radius: 5px;cursor: pointer;}
+.task-add-btn:hover{color: #03a9f4;}
+.task-add-btn>span{line-height: 35px;}
+.big-add{font-size: 30px;}
+
+.project-info-panel{}
+.project-info-box{width: 1100px; margin: 0 auto;background-color: #d9d9d9;border-radius: 3px;}
+.project-info-header{width: 100%; height:65px; line-height:65px; border-bottom:1px solid #e5e5e5;}
+.project-info-header>span{margin-left:20px;}
+.project-info-body{margin: 20px; padding:0 0 20px 0;}
+.project-image{width:254px; height:148px; margin:0 auto 20px;}
+
+.image-cropper-panel{height: 600px;}
