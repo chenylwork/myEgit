@@ -4,7 +4,7 @@ package com.projectManager.action;
  * @author chenyl
  * @Date 2018年7月9日
  * @Description  
- * 提交信息远程修改了项目
+ * 
  */
 public interface Action{
 	// 配置文件对应的json数据返回时对应的result配置属性值
